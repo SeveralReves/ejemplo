@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" type="imagen/x-icon" href="img/L2SLATES-thumbs.png">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css"> <!-- icomoon -->
+
+			<title>L2SLATES – Language Services, LLC</title>
+	</head>
+
+	<body>
+		<!-- NavBar -->
+		<div class="nav-mobi"><a href="#" onclick="return false;" class="btn"><span class="icon icon-menu"></span></a></div>
+		<nav>
+			<ul class="menus">
+				<li><a class="home" href="es.html"><span class="icon icon-home"></span> Inicio</a></li>
+				<li><a href="about.html">Acerca de</a></li>
+				<li><a href="services.html">Servicios</a></li>
+				<li><a href="clases-and-coaching.html">Clases y tutorías</a>
+					<!-- <nav class="subnav">
+						<a href="second-languaje-teaching.html">Second Language Teaching</a>
+						<a href="freelance-mentoring.html">Tutoría para Freelance</a>
+						<a href="trados-studio-training.html">Entrenamiento enTrados Studio</a>
+					</nav> -->
+				</li>
+				<li><a href="groups.html">Meetup Groups</a></li>
+			</ul>
+			<div class="español"><a href="index.html">ENGLISH</a></div>
+		</nav>
+		<header>
+		</header>
+		<main style="padding: 0px;">
+			<div class="slides">
+				<img src="img/slides/slides1.jpg" alt="L2slates assistance your career">
+				<img src="img/slides/slides2.jpg" alt="L2slates passion for language">
+				<img src="img/slides/slides3.jpg" alt="L2slates passion for language">
+			</div>
+			<div class="info-main">
+				<article>
+					<div><span class="icon icon-pencil2"></span></div>
+					<h3>Traducciónes de Español <> Inglés</h3>
+					<p>Desde documentos de una o dos páginas hasta grandes proyectos: Podemos hacerlo.</p>
+					<a href="#"><b>Estimar un precio</b></a>
+				</article>
+				<article>
+					<div><span class="icon icon-books"></span></div>
+					<span class="icon "></span>
+					<h3>Tutoría para Freelance</h3>
+					<p>Le enseñaremos cómo convertirse en un jugador en la industria de la traducción en los Estados Unidos.</p>
+					<a href="#"><b>Aprende cómo</b></a>
+				</article>
+				<article>
+					<div><span class="icon icon-user-tie"></span></div>
+					<span class="icon "></span>
+					<h3>Entrenamiento en Trados Studio</h3>
+					<p>Desea agregar Trados Studio a su currículum. Te ayudaremos a comenzar.</p>
+					<a href="#"><b>Pedir una cita</b></a>
+				</article>
+			</div>
+			<div class="info-main2">
+				<h2>PIDE UNA REUNIÓN CON NOSOTROS PARA DISCUTIR TUS NECESIDADES</h2>
+				<p>Desde certificados hasta páginas web y proyectos de localización: podemos hacerlo. ¿No sabes por dónde empezar? Simple, ¡Contáctanos!</p>
+			</div>
+			<div class="info-main3">
+				<div class="text-main3">
+					<h2>Servicios de Localización</h2>
+					<p>Su sitio web se lee bien en español y en inglés. ¡Felicitaciones! ¿Desea asegurarse de que se lea bien en los Estados Unidos? ¿En español de Chile o Venezuela?</p>
+				</div>
+				<div class="button"><a href="#"><span class="icon icon-folder-open"></span> APRENDA MÁS</a></div>
+			</div>
+		</main>	
+
+		<footer>
+			<div class="widget">
+				<div class="Redes">
+					<h3>Mantente Conectado</h3>
+					<br>
+					<div class="but-redes"><a href="https://www.facebook.com/pages/L2SLATES-LANGUAGE-SERVICES/1521756108056002" target="_blank" class="icon icon-facebook"></a></div>
+					<div class="but-redes"><a href="https://twitter.com/l2slates" target="_blank" class="icon icon-twitter"></a></div>
+					<div class="but-redes"><a href="https://plus.google.com/117103135221862514793/posts" target="_blank" class="icon icon-google-plus"></a></div>
+				</div>
+				<div>
+					<h3>Contáctanos</h3>
+					<p>Teléfono: 1 (408) 277-0654</p>
+					<p>Correo: info@l2slates.com</p>
+				</div>	
+
+			</div>
+			<div class="inf">
+				<p>© 2015 L2SLATES Language Services, LLC. All rights reserved.</p>	
+			</div>
+		</footer>
+
+		<!-- JAVASCRIPT -->
+		<!-- jquery -->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<!-- Slide -->
+		<script type="text/javascript" src="js/jquery.slides.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$(".slides").slidesjs({
+					play:{
+						active:true,
+						effect: "fade",
+						interval: 4000,
+						auto: true,
+						swap:true,
+						pauseOnHover:false,
+						restartDelay:2500
+						}
+					});
+				});
+		</script>
+		<script type="text/javascript">
+				var aux = 1;
+				$('.btn').click(function(){
+					if(aux == 1){
+						$('nav').animate({
+							left: '0%',
+						},1000);
+						$('.menus').animate({
+							left: '0%',
+							top:'0%',
+						},1300);
+						aux = 0;
+					}else{
+						$('nav').animate({
+							left: '-100%',
+						},1000);
+						$('.menus').animate({
+							left: '-100%',
+							top: '-100%',
+						},500);				
+						aux = 1;
+					}
+				});
+
+		</script>
+	</body>

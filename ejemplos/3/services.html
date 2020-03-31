@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" type="imagen/x-icon" href="img/L2SLATES-thumbs.png">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css"> <!-- icomoon -->
+
+			<title>L2SLATES – Language Services, LLC</title>
+	</head>
+
+	<body>
+		<!-- NavBar -->
+		<div class="nav-mobi"><a href="#" onclick="return false;" class="btn"><span class="icon icon-menu"></span></a></div>
+		<nav>
+			<ul class="menus">
+				<li><a href="index.html"><span class="icon icon-home"></span> Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a class="home" href="services.html">Our Services</a></li>
+				<li><a href="clases-and-coaching.html">Classes and Coaching</a>
+					<!-- <nav class="subnav">
+						<a href="second-languaje-teaching.html">Second Language Teaching</a>
+						<a href="freelance-mentoring.html">Freelance Mentoring</a>
+						<a href="trados-studio-training.html">Trados Studio Training</a>
+					</nav> -->
+				</li>
+				<li><a href="groups.html">Meetup Groups</a></li>
+			</ul>
+			<div class="español"><a href="es.html">ESPAÑOL</a></div>
+		</nav>
+		<header>
+		</header>
+		<main>
+			<div class="htittle"><h2>Our Services</h2></div>
+			<div class="submain">
+					<h1>Combining teaching with translation and interpretation since 1999</h1>
+					<p>We have successfully combined the college language and linguistics teaching with the ever-growing translation and interpretation field since 1999. We seek to put our high qualifications, knowledge, experience, coherent team effort, love for language-related projects, high proficiency in both English and Spanish language, linguistics training, and desire to serve our clientele.<br><br>
+					Our services include:</p>
+					<ul class="list">
+						<li>Spanish to English and English to Spanish translation</li>
+						<li>Spanish to English and English to Spanish interpretation</li>
+						<li>Latam and US Spanish localization</li>
+						<li>Spanish language teaching teaching and testing</li>
+						<li>English language teaching and testing</li>
+						<li>Linguists and language teachers recruitment, training  and testing</li>
+						<li>Responsibility in translation project management</li>
+						<li>Voice-over</li>
+						<li>Subtitling</li>
+						<li>Terminology services a la carte</li>
+						<li>Translator’s and interpreter’s certification test prep</li>
+						<li>Corpus analysis linguistics</li>
+						<li>Editing and proofreading</li>
+						<li>Text-to-speech analysis</li>
+						<li>Trados Studio 2011 and 2014 training</li>
+						<li>Spanish-English language coaching</li>
+						<li>Computerized language testing</li>
+						<li>E-learning course design and delivery</li>
+					</ul>
+			</div>
+
+			
+		</main>	
+
+		<footer>
+			<div class="widget">
+				<div class="Redes">
+					<h3>Stay Connected</h3>
+					<br>
+					<div class="but-redes"><a href="https://www.facebook.com/pages/L2SLATES-LANGUAGE-SERVICES/1521756108056002" target="_blank" class="icon icon-facebook"></a></div>
+					<div class="but-redes"><a href="https://twitter.com/l2slates" target="_blank" class="icon icon-twitter"></a></div>
+					<div class="but-redes"><a href="https://plus.google.com/117103135221862514793/posts" target="_blank" class="icon icon-google-plus"></a></div>
+				</div>
+				<div>
+					<h3>Contact Us</h3>
+					<p>Phone: 1 (408) 277-0654</p>
+					<p>Email: info@l2slates.com</p>
+				</div>	
+
+			</div>
+			<div class="inf">
+				<p>© 2015 L2SLATES Language Services, LLC. All rights reserved.</p>	
+			</div>
+		</footer>
+
+		<!-- JAVASCRIPT -->
+		<!-- jquery -->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<!-- Slide -->
+		<script type="text/javascript" src="js/jquery.slides.js"></script>
+		
+		<script type="text/javascript">
+				var aux = 1;
+				$('.btn').click(function(){
+					if(aux == 1){
+						$('nav').animate({
+							left: '0%',
+						},1000);
+						$('.menus').animate({
+							left: '0%',
+							top:'0%',
+						},1300);
+						aux = 0;
+					}else{
+						$('nav').animate({
+							left: '-100%',
+						},1000);
+						$('.menus').animate({
+							left: '-100%',
+							top: '-100%',
+						},500);				
+						aux = 1;
+					}
+				});
+
+		</script>
+	</body>

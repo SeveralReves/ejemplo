@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" type="imagen/x-icon" href="img/L2SLATES-thumbs.png">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css"> <!-- icomoon -->
+
+			<title>L2SLATES – Language Services, LLC</title>
+	</head>
+
+	<body>
+		<!-- NavBar -->
+		<div class="nav-mobi"><a href="#" onclick="return false;" class="btn"><span class="icon icon-menu"></span></a></div>
+		<nav>
+			<ul class="menus">
+				<li><a href="index.html"><span class="icon icon-home"></span> Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="services.html">Our Services</a></li>
+				<li><a href="clases-and-coaching.html">Classes and Coaching</a>
+					<!-- <nav class="subnav">
+						<a href="second-languaje-teaching.html">Second Language Teaching</a>
+						<a href="freelance-mentoring.html">Freelance Mentoring</a>
+						<a href="trados-studio-training.html">Trados Studio Training</a>
+					</nav> -->
+				</li>
+				<li><a href="groups.html">Meetup Groups</a></li>
+			</ul>
+			<div class="español"><a href="es.html">ESPAÑOL</a></div>
+		</nav>
+		<header>
+		</header>
+		<main>
+			<div class="htittle"><h2>Contact</h2></div>
+			<div class="submain">
+				<h1>Slate us!<br>Please send us your document if you would like to receive an estimate of cost and delivery date.</h1>
+
+				<form action="" name="formulario" method="get">
+					<input type="text" class="form" name="firstName" id="firstName" maxlength="15" placeholder="First Name">	
+					<br><input type="text" class="form" name="LastName" id="LastName" maxlength="15" placeholder="Last Name">
+					<br><input type="text" class="form" name="mail" id="email" maxlength="40" placeholder="example@gmail.com">
+					<br><input type="number" class="form" name="phone" id="phone" placeholder="phone">
+					<br><input type="text" class="form"  name="" placeholder="Special Instuctions">
+					<br>Rush Work <input type="checkbox" name="">
+					
+				</form>
+
+			</div>
+
+		
+			
+		</main>	
+
+		<footer>
+			<div class="widget">
+				<div>
+					<h3>Contact Us</h3>
+					<p>Phone: 1 (408) 277-0654</p>
+					<p>Email: info@l2slates.com</p>
+				</div>	
+				<div class="Redes">
+					<h3>Stay Connected</h3>
+					<br>
+					<div class="but-redes"><a href="https://www.facebook.com/pages/L2SLATES-LANGUAGE-SERVICES/1521756108056002" target="_blank" class="icon icon-facebook"></a></div>
+					<div class="but-redes"><a href="https://twitter.com/l2slates" target="_blank" class="icon icon-twitter"></a></div>
+					<div class="but-redes"><a href="https://plus.google.com/117103135221862514793/posts" target="_blank" class="icon icon-google-plus"></a></div>
+				</div>
+
+			</div>
+			<div class="inf">
+				<p>© 2015 L2SLATES Language Services, LLC. All rights reserved.</p>	
+			</div>
+		</footer>
+
+		<!-- JAVASCRIPT -->
+		<!-- jquery -->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<!-- Slide -->
+		<script type="text/javascript" src="js/jquery.slides.js"></script>
+		<script type="text/javascript">
+				var aux = 1;
+				$('.btn').click(function(){
+					if(aux == 1){
+						$('nav').animate({
+							left: '0%',
+						},1000);
+						$('.menus').animate({
+							left: '0%',
+							top:'0%',
+						},1300);
+						aux = 0;
+					}else{
+						$('nav').animate({
+							left: '-100%',
+						},1000);
+						$('.menus').animate({
+							left: '-100%',
+							top: '-100%',
+						},500);				
+						aux = 1;
+					}
+				});
+
+		</script>
+	</body>

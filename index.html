@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" type="imagen/x-icon" href="img/logo-negro.png">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css"> <!-- icomoon -->
+
+			<title>SeveralReves - Justo lo que buscas</title>
+	</head>
+
+	<body>
+		<div class="nav-mobi"><a href="#" onclick="return false;" class="btn"> <span class="icon icon-menu"></span></a></div>
+        <nav class="navscroll">
+            <a href="index.html"><img src="img/SVR-negro.png" style="width: 250px; margin-left: 20px;"></a>
+            <ul class="menu">
+                <a href="#main" ><li class="boton-menu">INICIO</li></a>
+                <a href="#nosotros"><li class="boton-menu">ACERCA DE MI</li></a>
+                <a href="#portafolio" ><li class="boton-menu">PORTAFOLIO</li></a>
+                <a href="#contacto"><li class="boton-menu">CONTACTO</li></a>
+            </ul>
+        </nav>
+        <header>
+            <div>
+                <span>JUSTO LO QUE BUSCAS</span>
+            </div>
+        </header>
+        <main id="main">
+            <div class="razones">
+                <h2>5 RAZONES PARA TENER TU PROPIA PAGINA WEB</h2>
+                <div class="razones-1">
+                    <div class="razon"><span class="icon icon-location2"></span><h3>Accesibilidad</h3><p>Tus clientes podrán acceder a tu negocio cada vez que quieran.</p></div>
+                    <div class="razon"><span class="icon icon-clock"></span><h3>Disponibilidad</h3><p>Tus clientes podrán acceder a tu negocio cada vez que quieran.</p></div>
+                    <div class="razon"><span class="icon icon-checkmark"></span><h3>Impulsa tu marca</h3><p>Tus clientes podrán acceder a tu negocio cada vez que quieran.</p></div>
+                    <div class="razon"><span class="icon icon-users"></span><h3>Todos pueden encontrarte</h3><p>Tus clientes podrán acceder a tu negocio cada vez que quieran.</p></div>
+<!--                     <div class="razon"><span class="icon icon-user-plus"></span><h3>Fideliza tus clientes</h3><p>Tus clientes podrán acceder a tu negocio cada vez que quieran.</p></div> -->
+                </div>
+            </div>
+            <div class="nosotros" id="nosotros">
+                <img src="img/SVR-blanco.png" style="margin:  30px auto; width: 50%;">
+                <h2>ACERCA DE MI</h2>
+                <p>Soy Gabriel Durán, estudiante de Matemática Opción: Estadística y Matemática Computacional en la Universidad Simón Bolívar, en Venezuela y desarroladdor web. Amo las matematicas y la programación. SeveralReves es mi marca personal y está enfocada en ofrecer diseño y desarrollo web, especializado, pero no limitado, al frontend.
+                </p>
+                <div class="container">
+                    <div class="caracteristicas">
+                        <h3>Lenguajes de Programación</h3>
+                        <ul class="columnas">
+                            <li><img src="img/icons/js.png" width="40" style="margin: 0 20px;">Javascript</li>
+                            <li><img src="img/icons/php.png" width="40" style="margin: 0 20px;">PHP</li>
+                            <li><img src="img/icons/python.png" width="40" style="margin: 0 20px;">Python</li>
+                            <li><img src="img/icons/cpp.png" width="40" style="margin: 0 20px;">C++</li>
+                            <li><img src="img/icons/matlab.png" width="40" style="margin: 0 20px;">Matlab</li>
+                        </ul>
+                    </div>
+                    <div class="caracteristicas">
+                        <h3>Tecnologías</h3>
+                        <ul class="columnas" style="margin-left: 30px">
+                            <li>Sass</li>
+                            <li>React</li>
+                            <li>Vue</li>
+                            <li>Tailwind</li>
+                            <li>Bootstrap</li>
+                            <li>Grid CSS & Flexbox</li>
+                            <li>JQuery</li>
+                            <li>Wordpress</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="trabajos" id="portafolio">
+                <h2>Portafolio</h2>
+                <p>Algunos de mis trabajos</p>
+                <div class="ejemplos">
+                    <a href="ejemplos/1/index.html" target="_blank"><img src="img/ejemplo1.png"></a>
+                    <a href="ejemplos/2/congreso.html" target="_blank"><img src="img/ejemplo2.png"></a>
+                    <a href="ejemplos/3/index.html" target="_blank"><img src="img/ejemplo3.png"></a>
+                </div>
+            </div>
+            <div class="contacto" id="contacto">
+                <h2>Contactame</h2>
+                <p>Déjanos un mensaje y te responderemos en el menor tiempo posible</p>
+                <p style="text-align: left; margin-left: 30px;"><span class="icon icon-location2"></span>Caracas, Ve</p>
+                <!-- <p style="text-align: left; margin-left: 30px;"><span class="icon icon-phone"></span> +58 412 212 000 00 00</p> -->
+                <p style="text-align: left; margin-left: 30px;"><span class="icon icon-mail2"></span> Email: gabrielalexander2@gmail.com</p>
+                <form action="enviar.php" method="POST" name="contacto" id="contacto">
+                    <input type="text" name="nombre" size="20"  placeholder="Nombre" id="nombre" required><br>
+                    <input type="text" name="email" size="30"  placeholder="Correo" id="email" required><br>
+                    <input type="text" name="asunto" size="100" placeholder="Asunto" id="asunto" required><br>
+                    <input type="text" name="mensaje" size="500" placeholder="Mensaje" id="mensaje" required><br>
+                    <input type="submit" value="Enviar" class="boton-form"> 
+                </form>
+            </div>
+        </main> 
+			
+		<footer>
+		</footer>
+		<!-- JAVASCRIPT -->
+		<!-- jquery -->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
+		<script type="text/javascript">
+			$(function (){
+				var aux = 1;
+				$('.btn').click(function(){
+					if(aux == 1){
+						$('nav').animate({
+							right: '0%',
+						},1000);
+						$('.menus').animate({
+							right: '0%',
+							top:'0%',
+						},1300);
+						aux = 0;
+					}else{
+						$('nav').animate({
+							right: '-150%',
+						},1000);
+						$('.menus').animate({
+							right: '-150%',
+							top: '-100%',
+						},500);				
+						aux = 1;
+					}
+				});
+				
+			      $(window).scroll(function(){
+					var barra = $(window).scrollTop();
+			      	var contenido2 = $("#main").offset();
+			         if (barra > contenido2.top) {
+			          $('.navscroll').addClass("fondo");
+			          // $('.btn').addClass("btn2");
+			         } else {
+			          $('.navscroll').removeClass("fondo");
+			          // $('.btn').removeClass("btn2");
+			         }
+			      });
+			});
+		</script>
+	</body>

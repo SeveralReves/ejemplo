@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" type="imagen/x-icon" href="img/Cru Logo vzla.png">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css"> <!-- icomoon -->
+
+			<title>Cru Venezuela</title>
+	</head>
+
+	<body>
+		<div class="nav-mobi"><a href="#" onclick="return false;" class="btn">MENÚ</a></div>
+		<nav class="navscroll">
+			<div class="logo">
+				<a href="#" onclick="return false">
+				<img src="img/Cru-Logo-vzla.png" style="width: 120px;">
+				</a>
+			</div>
+			<ul class="menu">
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="vida-estudiantil.html">VIDA ESTUDIANTIL</a></li>
+				<li><a href="congreso.html" >CONGRESO</a></li>
+				<li><a href="registro.html">REGISTRO</a></li>
+				<!-- <li><a href="#" onclick="return false;">CONTACTO</a></li> -->
+			</ul>
+		</nav>
+		<header class="headerI">
+			
+		</header>
+		<main id="main">
+			<div class="cru">
+				<!-- <div class="forma_oro"></div> -->
+				<h1 class="vision" style="text-align: center;">Movimientos en todas partes<br> hasta que cada persona <br>conozca un verdadero <br>seguidor de Jesus. </h1>
+			</div>
+			<div class="poster">
+				<img src="img/poster.jpg">
+	
+			</div>
+			<div class="boton">
+				<a href="congreso.html">ENTRA A VIDA 2019</a>
+			</div>
+			<div class="cru2">
+				<h4>CRU ES UNA COMUNIDAD APASIONADA POR CONECTAR <br> A LAS PERSONAS CON JESUCRISTO</h4>
+				<a href="#" onclick="false">Cónocer más</a>
+				</div>
+		</main>	
+
+		<footer  style="background: #666062;">
+			<div class="info">
+				<div class="ciudades">
+					<h3>Contáctenos</h3>
+					<p><strong>Dirección</strong><br>Avenida tal y tal<br>frente a tal<br>Caracas, Venezuela</p>
+					<p><strong>Telefono</strong><br>0212-xxx xx xx<br><br><strong>Horario de Oficina</strong><br>8:00 am - 3:00 pm</p>
+				</div>
+				<div class="vida">
+					<h3>Cru Venezuela</h3>
+					<p><strong>Nuestra Visión:</strong><br> Movimientos en todas partes hasta que cada persona conozca un verdadero seguidor de Jesús.<br><br><strong>Nuestra Misión:</strong><br> Ganar, Edificar, Enviar.</p>
+				</div>
+				<div class="social">
+					<h3>Síguenos en nuestras redes</h3>
+					<a href="https://www.facebook.com/cruvenezuela/" target="_blank"><span class="icon icon-facebook"></span> Cru Venezuela</a>
+					<a href="https://www.instagram.com/cruvenezuela/" target="_blank"><span class="icon icon-instagram"></span>	Cruvenezuela</a>
+				</div>
+			</div>
+		</footer>
+		<!-- JAVASCRIPT -->
+		<!-- jquery -->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
+		<script type="text/javascript">
+				var aux = 1;
+				$('.btn').click(function(){
+					if(aux == 1){
+						$('nav').animate({
+							left: '0%',
+						},1000);
+						$('.menus').animate({
+							left: '0%',
+							top:'0%',
+						},1300);
+						aux = 0;
+					}else{
+						$('nav').animate({
+							left: '-150%',
+						},1000);
+						$('.menus').animate({
+							left: '-150%',
+							top: '-100%',
+						},500);				
+						aux = 1;
+					}
+				});
+				
+
+			$(function (){
+			      $(window).scroll(function(){
+					var barra = $(window).scrollTop();
+			      	var contenido2 = $("#main").offset();
+			         if (barra > contenido2.top) {
+			          $('.navscroll').addClass("fondoindex");
+			          $('.btn').addClass("btn2");
+			         } else {
+			          $('.navscroll').removeClass("fondoindex");
+			          $('.btn').removeClass("btn2");
+			         }
+			      });
+			  });
+
+
+		</script>
+	</body>

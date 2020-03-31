@@ -1,0 +1,899 @@
+/*
+MAGENTA #FF009E 
+AZUL #0000FF
+AMARILLO 1 #100D21
+AMARILLO 2 #FFCE00*
+
+	COLORES
+
+	ORO CRU  		#F9B625
+	CRU GRIS 		#666062
+	CRU DEEP BLUE	#007398
+	CRU BRIGHT BLUE	#3EB1C8
+	CRU ORANGE		#DD7D1B
+
+	GRAYSCALE
+		WHITE  	#FFFFFF
+		SAND 	#F4F4F4
+		PEBBLE 	#F0F0F0
+		STONE 	#E7E7E7
+		ROCK	#B9B9B9
+		SLATE	#909B9C
+		BLACK 	#000000
+
+
+	BODY COLOR TEXT #3a3a3a
+	LINKS			#007398
+	MUTED BODY COLOR#67747c
+	COLORTEXT MUTED	#abbabf (MAYUSCULAS Y BOLD)
+	
+	HIGHLIGHTS
+		INFO		#5bc0de
+		Success		#5cb85c
+		Warning		#e89643
+		Danger		#d9534f
+		
+	SOCIAL MEDIA
+		Facebook		#3b5999
+		Instagram		#3f729b
+		Pinterest		#cc2127
+		Google Plus		#dd4b39
+		Twitter			#55acee
+*/
+@import url('fuentes.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+/*GENERALES*/
+
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	font-family: 'montserrat';
+	background: #000;
+	color: #3a3a3a;
+}
+
+a{
+	text-decoration: none;
+	color: #007398;
+}
+ul{
+	list-style: none;
+}
+h1{
+	text-align: center;
+	padding: 10px;
+}
+h2{
+	color: #fff;
+	font-size: 30px;
+}
+h3{
+	color: #FFCE00;
+	font-size: 30px;
+}
+h4{
+	font-size:30px;
+	text-align: center;
+	font-family: 'bebas_neue';
+	color: #007398;
+}
+
+h5{
+	font-family: 'bebas_neue';
+	font-size: 30px;
+	color: #FFCE00;
+}
+
+.btn{
+	display: none;
+}
+/*NAV*/
+nav{
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	padding: 10px;
+	font-family: 'montserrat-bold';
+    transition:background-color 500ms, color 500ms;
+	/*FLEX*/
+	display: flex;
+	justify-content: space-around;
+}
+nav .logo a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav .logo a img{
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+}
+nav ul{
+	/*FLEX*/
+	display: flex;
+	align-items: center;
+}
+
+nav ul li{
+	padding: 20px;
+}
+nav li a{
+	color: #fff;
+}
+li a:hover{
+    transition: color 200ms;
+	color:#FFCE00;
+}
+nav .final{
+	width: 200px;
+}
+
+.fondo{
+    transition:background-color 200ms;
+	box-shadow: 0px 2px 5px #000;
+	background: #000;
+}
+.fondoindex{
+    transition:background-color 200ms;
+	box-shadow: 0px 2px 5px #000;
+	background: #f0f0f0;
+}
+.fondoindex a{
+	color: #000;
+}
+.forma_oro{
+	width: 60%;
+	display: block;
+	-webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+}
+.cru{
+	background: #F9B625;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.vision{
+		font-size: 40px;
+		color: #fff;
+		font-family: love;
+}
+.cru2{
+	background: #007398;
+	width: 100%;
+	height: 400px;
+	padding: 7%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.cru2 h4{
+	color: #fff;
+	font-family: montserrat;
+	font-size: 30px;
+}
+
+.cru2 a{
+	border: 1px solid #fff;
+	padding: 10px;
+	border-radius: 10px;
+	color: #fff;
+}
+footer h3{
+	font-size: 20px;
+}
+.registro{
+	padding: 10px;
+}
+.registro h3{
+	text-align: center;
+}
+
+
+/*Header*/
+header{
+	width: 100%;
+	height: 500px;
+	background: url(../img/header.jpg);
+	background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-size: auto 500px  ; /* Encajamos la imagen al 100% del ancho */
+	background-attachment: fixed;
+	background-position: top center;
+}
+
+.headerI{
+	background: url(../img/header1.jpg);
+	background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-size: cover; /* Encajamos la imagen al 100% del ancho */
+	background-attachment: fixed;
+	background-position: bottom center;
+}
+.headerV{
+	background: url(../img/headerv.jpg);
+	background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-size: cover; /* Encajamos la imagen al 100% del ancho */
+	background-attachment: fixed;
+	background-position:  center;
+}
+/*MAIN*/
+main{
+	width: 100%;
+	background: #fff;
+}
+.lema{
+	background: #fff;
+	width: 100%;
+	padding: 50px;
+	padding-top: 150px;
+	/*FLEX*/
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.lema>div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.exaltado{
+	background: url(../img/Dios-exaltado1.jpg);
+	background-size: cover;
+}
+
+.apasionados{
+	background: url(../img/estudiantes1.jpg);
+	background-size: cover;
+}
+
+.reconstruida{
+	background: url(../img/venezuela1.jpg);
+	background-size: cover;
+}
+
+/*Informacion*/
+.informacion{
+	padding: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.informacion article{
+	text-align: right;
+	font-size: 20px;
+	width: 500px;
+}
+.informacion .titulo{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; 
+}
+.informacion h1{
+	font-family: 'montserrat';
+	font-size: 100px;
+	color: #007398;
+}
+.boton{
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+	background: #d2d2d2;
+}
+
+.boton a{
+	background: #F7F7F7;
+	margin: 30px; 
+	padding: 15px;
+	box-shadow: 0px 0px 25px #000;
+}
+.boton a:hover{
+	background: #000;
+	color: #F9B625;
+}
+.boton1 {
+	position: relative;
+	top: 30px;
+	color: #fff;
+	text-align: center;
+	background: #32a43e;
+	padding: 20px 120px;
+}
+.boton1:hover{
+	background: #fff;
+	color: #F9B625;
+}
+
+.video{
+	background: #000;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.lema .caja{
+	width: 300px;
+	height: 300px;
+}
+.lema .texto img{
+	width: 300px;
+}
+.fecha{
+	width: 100%;
+	padding: 20px;
+	background: #000;
+	text-align: center;
+}
+.foto{
+	width: 100%;
+	height: 500px;
+	background: url(../img/vida2017.jpg);
+	background-size: cover;
+	background-position: center -250px;
+}
+.poster img{
+	width: 100%;
+
+/*	background: url(../img/poster.jpg);
+	background-position: center;
+	background-size: cover;*/
+}
+.versiculo{
+	width: 100%;
+	height: 300px;
+	background: #fff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.boton2{
+		color: #fff;
+		padding: 0px 20px;
+		width: 100px;
+		height: 40px;
+		background: #32a43e;
+		border: 0px;
+		font-size: 14px;
+		display: flex;
+		align-items:  center;
+		justify-content: center;
+}
+.boton3{
+		color: #000;
+		padding: 0px 20px;
+		width: 100px;
+		height: 40px;
+		background: #d2d2d2;
+		border: 0px;
+		font-size: 14px;
+		display: flex;
+		align-items:  center;
+		justify-content: center;
+}
+
+form{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.formu{
+display: flex;
+justify-content: center;
+}
+
+.label{
+width: 50%;
+margin: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+label, textarea, select{
+margin: 5px 0px;
+}
+
+.label>label, .label>textarea, .label>input, .label>div, .label>select{
+	width: 40%
+}
+.genero input{
+margin: 0px 15px;
+}
+
+.botones{
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.boton2:hover{
+	cursor: pointer;
+}
+
+.boton2:active{
+	background: #fff;
+	color: #000;
+	cursor: pointer;
+}
+
+.main{
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*FOOTER*/
+footer{
+	background: #040438;
+	padding: 10px;
+	color: #fff;
+	/*FLEX*/
+	display: flex;
+	flex-direction: column;
+}
+footer .info{
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer .info div{
+	width: 25%;
+	margin-left: 10px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+}
+.boton1{
+	padding: 20px;
+}
+video{
+	width: 110%;
+	height: auto;
+}
+.vida p{
+	text-align: justify;
+}
+
+.ciudades ul{
+	list-style: disc;
+	margin-left: 20px;
+}
+
+.ciudades ul li{
+	margin-top: 5px;
+}
+
+
+.social a {
+	padding: 10px;
+	color: #fff;
+}
+
+.social a:hover{
+	color: #E5FF00;
+}
+.social a{
+	margin-top: 30px;
+}
+
+.social a span{
+	margin: 5px;
+	font-size: 20px;
+}
+
+.logos{
+	/*FLEX*/
+	display: flex;
+	justify-content: center;
+
+}
+.logos img {
+	padding: 10px;
+	margin: 10px 50px;
+	height: 100px;
+}
+
+.formulario{
+	background: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+.informacion2{
+	display: flex;
+	justify-content: space-between;
+}
+.inf{
+	padding-bottom: 20px;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 30px;
+	padding: 10px;
+	font-family: 'Extra';
+	width: 100%;
+	height: 300px;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+    transition:width 500ms;
+}
+.inf:hover{
+	width: 120%;
+}  
+.magenta{
+	background: #C7007B;
+}
+.azul{
+	background: #0000AB;
+}
+.oscuro{
+	background: #100D21;
+}
+.amarillo{
+	background: #FFCE00;
+}
+.gris{
+	background: #d2d2d2; 
+}
+/*Vida Estudiantil*/
+.mvv{
+	display: flex;
+	justify-content: space-around;
+	padding: 40px;
+
+}
+.caja-mvv{
+	width: 300px;
+	height: 300px;
+	padding: 30px;
+	box-shadow: 0px 2px 5px #000;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+    transition:padding 200ms;
+
+}
+.caja-mvv:hover{
+	padding: 25px;
+}
+.caja-mvv h3{
+	text-align: center;
+	font-family: light;
+}
+.caja-mvv p{
+	margin-top: 50px;
+	font-size: 18px;
+	text-align: justify;
+	color: #fff;
+}
+
+.mde{
+	padding: 50px;
+	padding-bottom: 20px; 
+}
+.mde-cajas>div{
+	display: flex;
+	padding: 20px;
+	padding-bottom: 0px; 
+	align-items: center;
+}
+
+.mde-cajas{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.mde-cajas>p{
+	margin-top: 120px;
+}
+.mde-cajas>div>img{
+	height: 300px;
+	margin: 20px;
+}
+.mde h2{
+	font-family: 'Extra';
+	font-size: 40px;
+	color: #FFCE00;
+	text-align: center; 
+
+}
+.mde h5{
+	text-align: center;
+}
+.mde h5{
+	font-family: montserrat;
+}
+.mde p{
+	padding: 10px;
+	text-align: justify;
+}
+.movimiento{
+	background-color: #d2d2d2;
+	padding: 20px;
+}
+
+.movimiento h4{
+	font-size: 40px;
+}
+.movimiento:hover{
+	background-color: #000;
+}
+
+.movimiento:hover h4{
+	color: #fff;
+	
+}
+.galeria{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.gale{
+	width: 20%;
+	height: 20%;
+	background: #d2d2d2;
+}
+.herramientas>div>h4{
+	padding: 20px;
+	text-align: left;
+	color: #DD7D1B;
+	font-size: 35px; 
+}
+.herramientas>div>ul{
+	padding-left: 40px;
+}
+.herramientas>div>ul>li{
+	margin-bottom: 10px;
+}
+.mde-cajas>div>div>div{
+	display: flex;
+	justify-content: center;
+}
+.boton-mov{
+	width: 150px;
+	padding: 10px;
+	border-radius: 15px;
+	background: #0467FC;
+	margin: 10px;
+	color: #fff;
+	text-align: center;
+	border: 1px solid #0467FC;
+}
+.boton-mov:nth-child(1){
+	background: #B60303;
+	border: 1px solid #B60303;
+}
+.boton-mov:hover{
+	background: #fff;
+	border: 1px solid #000;
+	color: #000;
+}
+.mision{
+	margin: 20px;
+	padding: 20px;
+	background: #D7D7D7;
+	border: 1px solid #B9B9B9;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.mision img{
+	height: 200px;
+}
+.mision div{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.mision div p{
+	text-align: justify;
+}
+.mision div h6{
+	font-size: 20px;
+}
+
+/*Movil*/
+@media screen and (max-width: 800px){
+	header{
+		height: 40vh;
+		background-size: contain;
+	}
+	.logo a{
+		flex-direction: column;
+		align-items: center;
+	}
+	.logo a img{
+		padding: 0px;
+	}
+	.headerI{
+		background-size: 100% auto ;
+		background-position: top center;
+	}
+	.headerV{
+		background-size: 100% auto ;
+
+		background-position: top center;
+
+	}
+	.mde h2{
+		font-size: 30px;
+		width:100%;
+	}
+	.informacion .titulo{
+	align-items: center; 
+	}
+	.informacion h1{
+		padding: 0px;
+	}
+	.cru{
+		height: 300px;
+	}
+	.informacion{
+		flex-direction: column-reverse;
+		padding: 20px;
+	}
+	.informacion h1{
+		font-size: 40px;
+		margin: 0px;
+	}
+	.informacion article{
+		width: 90%;
+		text-align: center;
+		font-size: 15px;
+		margin: 20px;
+	}
+	.vision{
+		font-size: 20px;}
+	.nav-mobi{
+		z-index: 5;
+		position: fixed;
+		right: 0px;
+		top: 15px;
+	}
+
+	.lema{
+		flex-direction: column;
+	}
+
+	.btn{
+		z-index: 3;
+		display: block;
+		margin:10px;
+		padding:10px;
+		color: #fff;
+		font-size: 20px;
+		border-radius: 10px;
+		border: 1px solid #fff;
+    	transition:background-color 500ms, color 500ms;
+	}
+	.lema .caja{
+		width: 200px;
+		height: 200px;
+	}
+	.lema .texto img{
+		width: 200px;
+	}
+	.fondo-btn{
+	    transition:background-color 500ms, color 500ms;
+	    background-color: #fff;
+		color: #000;
+		border: 1px solid #000;
+	}
+	.logos{
+		margin-bottom: 25px;
+		flex-direction: column;
+
+	}
+	.fecha h3, .video h3{
+		font-size: 20px;
+	}
+	h4{
+		font-size: 20px;
+	}
+	nav{
+		position: fixed; 
+		left: -150%;
+		flex-direction: column;
+		z-index: 2;
+		justify-content: center;
+		vertical-align: center;
+		background: rgba(0,0,0,0.5);
+
+	}
+	.versiculo{
+		height: 200px;
+	}
+	footer .info{
+		flex-direction: column;
+		align-items: center;	
+	}
+	.logos{
+		flex-direction: column;
+		align-items: center;
+	}
+	.logos img{
+		width: 50%;
+		height: auto;
+	}
+
+	footer .info div{
+		width: 100%;
+		align-items: center;
+	}
+
+	nav ul{
+		flex-direction: column;
+	}
+	.fondo{
+		background: rgba(0,0,0,0.5);
+	}
+	.btn2{
+		color: #000;
+		border: 1px solid #000;
+
+	}
+	.foto{
+		height: 300px;
+		background-size: cover;
+		background-position: center;
+	}
+	.label{
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+	label{
+		margin-top: 30px;
+	}
+	.label>label, .label>textarea, .label>input, .label>div, .label>select{
+		width: 70%
+	}
+	.botones{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.boton3, .boton2{
+		margin: 0px;
+	}
+	.mvv{
+		flex-direction: column;
+		align-items: center;
+	}
+	.caja-mvv{
+		margin: 20px;
+	}
+	.movimiento h4{
+		font-size: 30px;
+	}
+	.mde-cajas>div{
+		flex-direction: column;
+		width: 100%;
+
+	}
+	.mde-cajas>div:nth-child(1){
+		flex-direction: column-reverse;
+		
+	}
+}

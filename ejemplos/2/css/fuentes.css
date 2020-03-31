@@ -1,0 +1,36 @@
+ @font-face {
+ 	font-family: montserrat-bold;
+ 	src:url(../fuentes/montserrat/Bold.ttf);
+ }
+ @font-face {
+ 	font-family: montserrat;
+ 	src:url(../fuentes/montserrat/Regular.ttf);
+ }
+ @font-face {
+ 	font-family: mytype;
+ 	src:url(../fuentes/mytype/mytype.ttf);
+ }
+ @font-face {
+ 	font-family: bebas_neue;
+ 	src:url(../fuentes/bebas/BebasNeue-Regular.ttf);
+ }
+ @font-face {
+ 	font-family: Extra;
+ 	src:url(../fuentes/Montserrat-ExtraBold.ttf);
+ }
+ @font-face {
+ 	font-family: teko;
+ 	src:url(../fuentes/Teko-Bold.ttf);
+ }
+ @font-face {
+ 	font-family: roboto;
+ 	src:url(../fuentes/Roboto-Thin.ttf);
+ }
+ @font-face {
+ 	font-family: love;
+ 	src:url(../fuentes/LOVES.ttf);
+ }
+ @font-face {
+ 	font-family: light;
+ 	src:url(../fuentes/freight-sans-light.otf);
+ }

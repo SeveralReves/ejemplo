@@ -1,0 +1,12 @@
+body{
+	background: #000;
+}
+
+header{
+	background-image: url(../img/L2SLATES-LOGO.png);
+	height: 400px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	
+}

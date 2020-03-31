@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" type="imagen/x-icon" href="img/L2SLATES-thumbs.png">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css"> <!-- icomoon -->
+
+			<title>L2SLATES – Language Services, LLC</title>
+	</head>
+
+	<body>
+		<!-- NavBar -->
+		<div class="nav-mobi"><a href="#" onclick="return false;" class="btn"><span class="icon icon-menu"></span></a></div>
+		<nav>
+			<ul class="menus">
+				<li><a href="index.html"><span class="icon icon-home"></span> Home</a></li>
+				<li><a class="home" href="about.html">About Us</a></li>
+				<li><a href="services.html">Our Services</a></li>
+				<li><a href="clases-and-coaching.html">Classes and Coaching</a>
+					<!-- <nav class="subnav">
+						<a href="second-languaje-teaching.html">Second Language Teaching</a>
+						<a href="freelance-mentoring.html">Freelance Mentoring</a>
+						<a href="trados-studio-training.html">Trados Studio Training</a>
+					</nav> -->
+				</li>
+				<li><a href="groups.html">Meetup Groups</a></li>
+			</ul>
+			<div class="español"><a href="es.html">ESPAÑOL</a></div>
+		</nav>
+		<header>
+		</header>
+		<main class="main-about">
+			<div class="htittle"><h2>About Us</h2></div>
+			<div class="submain">
+					<div class="leyend">
+						<p>L2slates reveals the linguistics training of their founders to construct a well-rounded business  character. <b>L2</b> is short for second language; <b>slates</b> is the second syllable of the word translates. It is a verb i. e. <b>to slate</b> (v.t.) to schedule; a noun i.e. <b>slate(s)</b> something for writing on, a tablet.</p>
+					</div>
+					<h4>A recent start-up in Silicon Valley</h4>
+					<p>Founded by Juan Pino-Silva, PhD and María Milagros Antonini, PhD, two retired scholars (full professors) from Universidad Simón Bolívar and Institituto Pedagógico, UPEL in Caracas, Venezuela immediately after their relocation to San Jose, CA. L2slates is a language-related consulting firm designed to continue the work and business life of the venezuelan firm, Forum Asesores, CA (1994-present) the first entrepreneurial effort of the couple.</p>
+					<h4>Coming from the educational front end</h4>
+					<p>We offer a plus: We are capable of doing high-quality research for you and write the research reports in either English or Spanish. We aspire to offer and gain the trust of the educational counties in the state of California in need of interpretation for IEP meetings and the posterior translations to Spanish of those meetings.</p>
+					<h4>Our goal</h4>
+					<p>To serve Fortune 500 companies, government agencies, language services providers, as well as the individual in the US or abroad. Because we can offer the best team, strict privacy policies and meticulous end work our, our pricing policies compare advantageously with other language service providers.</p>
+					<p class="black"><b>Slate a meeting with us to discuss your language service needs and budget for your project. Don’t know where to start? Simply, <a href="contact.html">Slate Us!</a></b></p>
+			</div>
+			</main>	
+
+		<footer>
+			<div class="widget">
+				<div class="Redes">
+					<h3>Stay Connected</h3>
+					<br>
+					<div class="but-redes"><a href="https://www.facebook.com/pages/L2SLATES-LANGUAGE-SERVICES/1521756108056002" target="_blank" class="icon icon-facebook"></a></div>
+					<div class="but-redes"><a href="https://twitter.com/l2slates" target="_blank" class="icon icon-twitter"></a></div>
+					<div class="but-redes"><a href="https://plus.google.com/117103135221862514793/posts" target="_blank" class="icon icon-google-plus"></a></div>
+				</div>
+				<div>
+					<h3>Contact Us</h3>
+					<p>Phone: 1 (408) 277-0654</p>
+					<p>Email: info@l2slates.com</p>
+				</div>	
+
+			</div>
+			<div class="inf">
+				<p>© 2015 L2SLATES Language Services, LLC. All rights reserved.</p>	
+			</div>
+		</footer>
+		<!-- JAVASCRIPT -->
+		<!-- jquery -->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<!-- Slide -->
+		<script type="text/javascript" src="js/jquery.slides.js"></script>		
+		<script type="text/javascript">
+				var aux = 1;
+				$('.btn').click(function(){
+					if(aux == 1){
+						$('nav').animate({
+							left: '0%',
+						},1000);
+						$('.menus').animate({
+							left: '0%',
+							top:'0%',
+						},1300);
+						aux = 0;
+					}else{
+						$('nav').animate({
+							left: '-100%',
+						},1000);
+						$('.menus').animate({
+							left: '-100%',
+							top: '-100%',
+						},500);				
+						aux = 1;
+					}
+				});
+
+		</script>
+</body>

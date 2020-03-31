@@ -1,0 +1,35 @@
+ @font-face {
+ 	font-family: sourcesans;
+ 	src:url(../fuentes/sourcesans/sourcesanspro-regular.ttf);
+ }@font-face {
+ 	font-family: sourcesansi;
+ 	src:url(../fuentes/sourcesans/sourcesanspro-italic.ttf);
+ }
+ @font-face {
+ 	font-family: sourcesansb;
+ 	src:url(../fuentes/sourcesans/sourcesanspro-light.ttf);
+ }
+  @font-face {
+ 	font-family: PlantinMTStd;
+ 	src:url(../fuentes/plantinMTStd/PlantinMTStd-Regular.otf);
+ }
+ @font-face {
+ 	font-family: inconsolata;
+ 	src:url(../fuentes/Inconsolata/Inconsolata-Regular.ttf);
+ }
+ @font-face {
+ 	font-family: montserrat;
+ 	src:url(../fuentes/Montserrat/Montserrat-ExtraLight.ttf);
+ }
+ @font-face {
+ 	font-family: montserratsb;
+ 	src:url(../fuentes/Montserrat/Montserrat-Thin.ttf);
+ }
+ @font-face {
+ 	font-family: montserratss;
+ 	src:url(../fuentes/Montserrat/Montserrat-ThinItalic.ttf);
+ }
+ @font-face {
+ 	font-family: roboto;
+ 	src:url(../fuentes/Roboto_Slap/RobotoSlap-Regular.ttf);
+ }

@@ -1,0 +1,16 @@
+ @font-face {
+ 	font-family: widaround;
+ 	src:url(../fonts/wida_round/Wida_Round_Bold.otf);
+ }
+ @font-face {
+ 	font-family: foursister;
+ 	src:url(../fonts/four_sister/FourSisters-Regular.otf);
+ }
+ @font-face {
+ 	font-family: bebasneue;
+ 	src:url(../fonts/Bebas_neue/BebasNeue-Book.otf);
+ }
+ @font-face {
+ 	font-family: bebasneue_bold;
+ 	src:url(../fonts/Bebas_neue/BebasNeue-Bold.otf);
+ }

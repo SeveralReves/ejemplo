@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" type="imagen/x-icon" href="img/logo-vida.png">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css"> <!-- icomoon -->
+
+			<title>Congreso Vida 2019</title>
+	</head>
+
+	<body>
+		<div class="nav-mobi"><a href="#" onclick="return false;" class="btn">MENÚ</a></div>
+		<nav class="navscroll">
+			<div class="logo">
+				<a href="#" onclick="return false">
+					<img src="img/logo-vida.png">
+					<h2>REGISTRO</h2>
+				</a>
+			</div>
+			<ul class="menu">
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="vida-estudiantil.html" >VIDA ESTUDIANTIL</a></li>
+				<li><a href="congreso.html">CONGRESO</a></li>
+				<li><a href="registro.html">REGISTRO</a></li>
+				<!-- <li><a href="#" onclick="return false;">CONTACTO</a></li> -->
+			</ul>
+		</nav>
+		<header>
+			
+		</header>
+		<main id="main">
+			<div class="main">
+				<p>Te has registrado con éxito</p>
+				<div class="botones">
+					<a href="index.html" class="boton2" style="width: 220px;">Volver a incio</a>	
+					<a href="registro.html" class="boton2" style="width: 220px;">Registrar a alguien más</a>	
+				</div>
+			</div>
+		</main>		
+
+		<footer>
+			<div class="info">
+				<div class="vida">
+					<h5>Vida Estudiantil</h5>
+					<p>Vida Estudiantil es una comunidad de jóvenes universitarios unidos por el deseo de conocer y amar a Dios cada vez más. Junto con otros estudiantes que compartan este deseo, con voluntarios y con iglesias, queremos darle a cada estudiante en nuestras universidades la oportunidad de decirle “¡Sí!” a Cristo y experimentar su amor y perdón.</p>
+				</div>
+				<div class="ciudades">
+					<h5>Ciudades en las que estamos</h5>
+					<ul>
+						<li>Caracas</li>
+						<li>Maracaibo</li>
+						<li>Maracay</li>
+						<li>Mérida</li>
+						<li>San Cristobal</li>
+						<li>Puerto La Cruz</li>
+						<li>Barquisimeto</li>
+						<li>Valencia</li>
+					</ul>
+				</div>
+				<div class="social">
+					<h5>Síguenos en nuestras redes</h5>
+					<a href="https://www.facebook.com/vidaestudiantilvenezuela/" target="_blank"><span class="icon icon-facebook"></span> Vida Estudiantil Venezuela</a>
+					<a href="https://www.instagram.com/vidaestudiantilvenezuela/" target="_blank"><span class="icon icon-instagram"></span>	vidaestudiantilvenezuela</a>
+				</div>
+			</div>
+			<div class="logos">
+				<img src="img/aniversario.png">
+				<img src="img/vida-estudiantil.png">
+			</div>
+		</footer>
+		<!-- JAVASCRIPT -->
+		<!-- jquery -->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
+		<script type="text/javascript">
+				var aux = 1;
+				$('.btn').click(function(){
+					if(aux == 1){
+						$('nav').animate({
+							left: '0%',
+						},1000);
+						$('.menus').animate({
+							left: '0%',
+							top:'0%',
+						},1300);
+						aux = 0;
+					}else{
+						$('nav').animate({
+							left: '-150%',
+						},1000);
+						$('.menus').animate({
+							left: '-150%',
+							top: '-100%',
+						},500);				
+						aux = 1;
+					}
+				});
+				
+
+		</script>
+	</body>
+	

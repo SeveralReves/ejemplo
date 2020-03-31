@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" type="imagen/x-icon" href="img/logo-negro.png">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css"> <!-- icomoon -->
+
+			<title>SeveralReves - Justo lo que buscas</title>
+	</head>
+
+	<body>
+		<div class="nav-mobi"><a href="#" onclick="return false;" class="btn"> <span class="icon icon-menu"></span></a></div>
+		<nav class="navscroll">
+			<a href="index.html"><img src="img/SVR-negro.png" style="width: 250px; margin-left: 20px;"><!-- <div class="logo">L O G O</div> --></a>
+			<ul class="menu">
+				<a href="index.html" ><li class="boton-menu">INICIO</li></a>
+				<a href="index.html" ><li class="boton-menu">ACERCA DE</li></a>
+				<a href="index.html"><li class="boton-menu">NOSOTROS</li></a>
+				<a href="index.html"><li class="boton-menu">CONTACTO</li></a>
+			</ul>
+		</nav>
+		<header>
+			<div id="inicio">
+				<span>JUSTO LO QUE BUSCAS</span>
+			</div>
+		</header>
+		<main id="main">
+			<div class="respuesta">
+				<h3>Su mensaje se envió exitosamente, le responderemos lo más rápido posible</h3>
+				<a href="index.html" class="boton">Regresar a Inicio</a>
+			</div>
+		</main>	
+
+			
+		<footer>
+		</footer>
+		<!-- JAVASCRIPT -->
+		<!-- jquery -->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
+		<script type="text/javascript">
+			$(function (){
+				var aux = 1;
+				$('.btn').click(function(){
+					if(aux == 1){
+						$('nav').animate({
+							right: '0%',
+						},1000);
+						$('.menus').animate({
+							right: '0%',
+							top:'0%',
+						},1300);
+						aux = 0;
+					}else{
+						$('nav').animate({
+							right: '-150%',
+						},1000);
+						$('.menus').animate({
+							right: '-150%',
+							top: '-100%',
+						},500);				
+						aux = 1;
+					}
+				});
+				
+			      $(window).scroll(function(){
+					var barra = $(window).scrollTop();
+			      	var contenido2 = $("#main").offset();
+			         if (barra > contenido2.top) {
+			          $('.navscroll').addClass("fondo");
+			          // $('.btn').addClass("btn2");
+			         } else {
+			          $('.navscroll').removeClass("fondo");
+			          // $('.btn').removeClass("btn2");
+			         }
+			      });
+			});
+		</script>
+	</body>

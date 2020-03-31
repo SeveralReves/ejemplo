@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" type="imagen/x-icon" href="img/logo-vida.png">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css"> <!-- icomoon -->
+
+			<title>Registro - Congreso Vida 2019</title>
+	</head>
+
+	<body>
+		<div class="nav-mobi"><a href="#" onclick="return false;" class="btn">MENÚ</a></div>
+		<nav class="navscroll">
+			<div class="logo">
+				<a href="#" onclick="return false">
+					<img src="img/logo-vida.png">
+					<h2>REGISTRO</h2>
+				</a>
+			</div>
+			<ul class="menu">
+				<li><a href="index.html";">INICIO</a></li>
+				<li><a href="vida-estudiantil.html">VIDA ESTUDIANTIL</a></li>
+				<li><a href="congreso.html">CONGRESO</a></li>
+				<li><a href="registro.html">REGISTRO</a></li>
+				<!-- <li><a href="#" onclick="return false;">CONTACTO</a></li> -->
+			</ul>
+		</nav>
+		<header>
+			
+		</header>
+			<main id="main" class="registro">
+				<h3>Registro para Vida 2019</h3>
+				<div class="formulario">
+				<form method="post" action="guardar.php"> 
+						<div class="label">
+							<label for="nombre">Nombres</label>
+							<input type="text" name="nombre" size="20"  placeholder="Nombres" id="nombre" required>
+							<label for="apellido">Apellidos</label>
+							<input type="text" name="apellido" size="20"  placeholder="Apellidos" id="apellido" required>
+							<label for="genero">Genero</label>
+							<div class="genero">
+								<input type="radio" name="genero" value="hombre">Hombre
+								<input type="radio" name="genero" value="mujer">Mujer
+							</div>
+							<label for="email">Correo</label>
+							<input type="text" name="email" size="30"  placeholder="Correo@gmail.com" id="email" required>
+							<label for="ciudad">Ciudad de la que vendrá</label>
+							<input type="text" name="ciudad" placeholder="Caracas" id="ciudad" required>
+							<label for="bday">Fecha de nacimiento</label>
+							<input type="date" name="bday"  id="bday" max="2017-12-31" placeholder="Fecha de naciemiento" required>
+							<label for="universidad">Universidad en la que estudias</label>
+							<input type="text" name="universidad"  id="universidad" placeholder="Solo si estudias actualmente">
+							<label for="info">Cuentanos como conociste del Congreso</label>
+							<textarea name="info"  maxlength="500" required></textarea>
+							<label for="taller1">Escoje el primer taller</label>
+							<select name="taller1" id="taller1" >
+					    		<option disabled selected>Escoje un taller</option> 
+					    		<option value="Taller1">Taller #1</option> 
+					    		<option value="Taller2">Taller #2</option> 
+					    		<option value="Taller3">Taller #3</option> 
+					    		<option value="Taller4">Taller #4</option> 
+					    		<option value="Taller5">Taller #5</option> 
+					    		<option value="Taller6">Taller #6</option> 
+					    		<option value="Taller7">Taller #7</option> 
+							</select>
+							<label for="taller2">Escoje el segundo taller</label>
+							<select size="1" name="taller2" id="taller2">
+					    		<option disabled selected>Escoje un taller</option> 
+					    		<option value="Taller1">Taller #1</option> 
+					    		<option value="Taller2">Taller #2</option> 
+					    		<option value="Taller3">Taller #3</option> 
+					    		<option value="Taller4">Taller #4</option> 
+					    		<option value="Taller5">Taller #5</option> 
+					    		<option value="Taller6">Taller #6</option> 
+					    		<option value="Taller7">Taller #7</option> 
+							</select>
+						</div>
+					<div class="botones">
+						<input type="reset" value="Restablecer" class="boton3">
+						<input type="submit" value="Enviar" class="boton2"> 
+					</div>
+				</form> 
+
+		</main>	
+
+			
+		<footer>
+			<div class="info">
+				<div class="vida">
+					<h5>Vida Estudiantil</h5>
+					<p>Vida Estudiantil es una comunidad de jóvenes universitarios unidos por el deseo de conocer y amar a Dios cada vez más. Junto con otros estudiantes que compartan este deseo, con voluntarios y con iglesias, queremos darle a cada estudiante en nuestras universidades la oportunidad de decirle “¡Sí!” a Cristo y experimentar su amor y perdón.</p>
+				</div>
+				<div class="ciudades">
+					<h5>Ciudades en las que estamos</h5>
+					<ul>
+						<li>Caracas</li>
+						<li>Maracaibo</li>
+						<li>Maracay</li>
+						<li>Mérida</li>
+						<li>San Cristobal</li>
+						<li>Puerto La Cruz</li>
+						<li>Barquisimeto</li>
+						<li>Valencia</li>
+					</ul>
+				</div>
+				<div class="social">
+					<h5>Síguenos en nuestras redes</h5>
+					<a href="https://www.facebook.com/vidaestudiantilvenezuela/" target="_blank"><span class="icon icon-facebook"></span> Vida Estudiantil Venezuela</a>
+					<a href="https://www.instagram.com/vidaestudiantilvenezuela/" target="_blank"><span class="icon icon-instagram"></span>	vidaestudiantilvenezuela</a>
+				</div>
+			</div>
+			<div class="logos">
+				<img src="img/aniversario.png">
+				<img src="img/vida-estudiantil.png">
+			</div>
+		</footer>
+		<!-- JAVASCRIPT -->
+		<!-- jquery -->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
+		<script type="text/javascript">
+				var aux = 1;
+				$('.btn').click(function(){
+					if(aux == 1){
+						$('nav').animate({
+							left: '0%',
+						},1000);
+						$('.menus').animate({
+							left: '0%',
+							top:'0%',
+						},1300);
+						aux = 0;
+					}else{
+						$('nav').animate({
+							left: '-150%',
+						},1000);
+						$('.menus').animate({
+							left: '-150%',
+							top: '-100%',
+						},500);				
+						aux = 1;
+					}
+				});
+				
+
+		</script>
+	</body>
