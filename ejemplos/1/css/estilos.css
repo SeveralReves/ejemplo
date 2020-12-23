@@ -95,6 +95,9 @@ main div h2{
 	font-family: 'lapiz';
 	font-size: 50px;
 }
+.acerca{
+	padding: 10px;
+}
 .acerca > p, .contacto > p{
 	margin: 50px 100px;
 	text-align: center;
@@ -104,8 +107,8 @@ main div h2{
 	display: flex;
 	justify-content: space-around;
 }
-.principios,{
-	width: 18%;
+.principios{
+	width: 25%;
 	text-align: center;
 }
 .principios img{
